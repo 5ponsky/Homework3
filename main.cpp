@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void check (const string s, const string name)
+void check (const Mystring s, const char* name)
 {
     cout << "checking " << name << endl;
     cout << name << " contains " << s << endl;
@@ -15,8 +15,9 @@ void check (const string s, const string name)
 
 int main()
 {
-    Mystring s2name("woo");
-    Mystring test = "stuff";
-    test.push_back('a');
+    Mystring s1("Liam");
+    Mystring s2 = " Dillingham";
+    check(s1, "s1");
+    check(s2, "s2");
 
 }
