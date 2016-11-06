@@ -103,7 +103,7 @@ private:
 //=== Overloading global operators for Mystring
 
 // Overload operator == for Mystring
-bool operator==(const Mystring&, const Mystring&);
+bool operator==(const Mystring& obj1, const Mystring& obj2);
 bool operator==(const char *, const Mystring&);
 bool operator==(const Mystring&, const char *);
 

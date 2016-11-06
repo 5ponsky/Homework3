@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Mystring.cpp" />
 		<Unit filename="Mystring.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

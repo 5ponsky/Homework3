@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1478296885 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\main.cpp
+	<iostream>
+	"Mystring.h"
+
+1478297095 c:\users\dillingh\desktop\csce 2014\homework1\homework3\mystring.h
+	<iostream>
+	<cstring>
+	<math.h>
+
