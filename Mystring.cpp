@@ -122,6 +122,7 @@ Mystring& Mystring::append(const char * str) {  /// READY
 
 //(OBJECT) Insert character into the string
 Mystring& Mystring::insert(size_type pos, const Mystring& str) {  /// READY
+    //Mystring *newMystring = new char[first.length() + second.length() + 1];
     char *temp = ptr_buffer + pos;
     strcpy(ptr_buffer + pos, str.c_str());
     strcat(ptr_buffer, temp);
@@ -139,16 +140,16 @@ Mystring& Mystring::insert(size_type pos, const char * str) {
 
 //(OBJECT) Replace some characters in a string
 Mystring& Mystring::replace(size_type start, size_type span, const Mystring& str) {
-    char *temp = ptr_buffer + pos;
-    strcpy(ptr_buffer + pos, str);
+    char *temp = ptr_buffer + start;
+    strcpy(ptr_buffer + start, str.c_str());
     strcat(ptr_buffer, temp);
     return *this;
 }
 
 //(POINTER) Replace some characters in a string
 Mystring& Mystring::replace(size_type start, size_type span, const char * str) {
-    char *temp = ptr_buffer + pos;
-    strcpy(ptr_buffer + pos, str);
+    char *temp = ptr_buffer + start;
+    strcpy(ptr_buffer + start, str);
     strcat(ptr_buffer, temp);
     return *this;
 }
