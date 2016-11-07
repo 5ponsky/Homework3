@@ -86,6 +86,27 @@ Mystring& Mystring::operator=(const char *str) { /// READY
     return *this;
 }
 
+
+// Array notation
+char Mystring::operator[](size_type pos) const { /// READY
+    return *(ptr_buffer + pos);
+}
+
+char& Mystring::operator[](size_type pos) { /// READY
+    return *(ptr_buffer + pos);
+}
+
+// Append
+Mystring& Mystring::operator+=(const Mystring& obj) { /// READY
+    strcat(ptr_buffer, obj.ptr_buffer);
+    return *this;
+}
+
+Mystring& Mystring::operator+=(const char * str) { /// READY
+    strcat(ptr_buffer, str);
+    return *this;
+}
+
 //**************************
 //Modifying the String
 //**************************
@@ -130,9 +151,8 @@ Mystring& Mystring::insert(size_type pos, const Mystring& str) {  /// READY
 }
 
 //(POINTER) Insert character into the string
-Mystring& Mystring::insert(size_type pos, const char * str) {
+Mystring& Mystring::insert(size_type pos, const char * str) { /// READY
     char *temp = ptr_buffer + pos;
-
     strcpy(ptr_buffer + pos, str);
     strcat(ptr_buffer, temp);
     return *this;
@@ -140,6 +160,9 @@ Mystring& Mystring::insert(size_type pos, const char * str) {
 
 //(OBJECT) Replace some characters in a string
 Mystring& Mystring::replace(size_type start, size_type span, const Mystring& str) {
+
+    //Find a way to deallocate SPAN spaces within the original string, and replace with new string
+    //I.e. similar to INSERT, but with a truncation included.
     char *temp = ptr_buffer + start;
     strcpy(ptr_buffer + start, str.c_str());
     strcat(ptr_buffer, temp);
