@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1478554838 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\main.cpp
+1478556314 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\main.cpp
 	<iostream>
 	"Mystring.h"
 
@@ -8,6 +8,6 @@
 	<cstring>
 	<math.h>
 
-1478553873 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\mystring.cpp
+1478556667 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\mystring.cpp
 	"Mystring.h"
 

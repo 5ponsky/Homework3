@@ -274,8 +274,8 @@ bool operator!=(const Mystring& left, const char *right) {
 
 //Add two strings together end to beginning
 Mystring operator+(const Mystring& first, const Mystring& second) {
-    Mystring temp;
-    temp = first + second;
+    Mystring temp = first;
+    temp.append(second);
     return temp;
 }
 
@@ -285,8 +285,7 @@ Mystring operator+(const Mystring& first, const Mystring& second) {
 
 //Print out a character string
 ostream& operator<<(ostream& out, const Mystring& obj) {
-    while(char *i)
-        out << obj.ptr_buffer[i];
+    out << obj.c_str();
     return out;
 }
 

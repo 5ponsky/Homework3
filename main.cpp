@@ -58,6 +58,6 @@ int main()
     s1 = "t";
     if(s1 != s2)
         cout << "not equal\n";
-    Mystring s3 = s1 + s2;
+    Mystring s3 = s2 + s1;
     cout << s3;
 }
