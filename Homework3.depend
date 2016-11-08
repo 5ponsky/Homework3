@@ -11,3 +11,15 @@
 1478556667 source:c:\users\dillingh\desktop\csce 2014\homework1\homework3\mystring.cpp
 	"Mystring.h"
 
+1478626262 source:c:\users\derek\desktop\csce 2014\homework3\mystring.cpp
+	"Mystring.h"
+
+1478464807 c:\users\derek\desktop\csce 2014\homework3\mystring.h
+	<iostream>
+	<cstring>
+	<math.h>
+
+1478627120 source:c:\users\derek\desktop\csce 2014\homework3\main.cpp
+	<iostream>
+	"Mystring.h"
+

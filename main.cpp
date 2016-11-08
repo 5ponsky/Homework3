@@ -19,19 +19,13 @@ int main()
     Mystring s2 = " Dillingham";
     check(s1, "s1");
     check(s2, "s2");
-    cout << "BREAK" << endl << endl;
-
     s1 += s2;
     check(s1, "s1");
     s2 = s1;
     check(s2, "s2");
-    s2 = " Sponsky";
-    check(s2, "s2");
-    //check(s2[0], "s2");
-
+    s1 = "Liam";
+    check(s1, "s1");
     s1 += ", a college student";
-    s2 = s1;
-    s2 = "Liam Dillingham, aasdf";
     check(s1, "s1");
     s1.clear();
     check(s1, "s1");
@@ -42,22 +36,28 @@ int main()
     check(s2, "s2");
     s2.append(" At the U of A.");
     check(s2, "s2");
-    s2.insert(5, "Gilchrist");
+    s2.insert(5, "Gilchrist ");
     check(s2, "s2");
-    s2.insert(14, s1);
+    s2.insert(35, s1);
     check(s2, "s2");
-    s2.replace(4, 3, s1);
+    s2.replace(6, 8, s1);
     check(s2, "s2");
-    s2.replace(4, 3, "woo");
+    s2.replace(27, 8, "University of Arkansas.");
     check(s2, "s2");
 
-    s1 = "test";
-    s2 = "test";
+    s1 = "A String";
+    s2 = "A String";
+    check(s1, "s1");
+    check(s2, "s2");
     if(s1 == s2)
-        cout << "equal\n";
-    s1 = "t";
+        cout << "The two Strings are equal\n";
+    s1 = "Not a String";
     if(s1 != s2)
-        cout << "not equal\n";
-    Mystring s3 = s2 + s1;
-    cout << s3;
+        cout << "The two strings are not equal\n";
+    Mystring s3 = s2 + ", and " + s1;
+    cout << "We can print a Mystring object:  " << s3 << endl;
+    cout << "We can find the index of an occurence of one string object in another: " << s3.find_first_of(s1)
+            << ". And with literals: " << s3.find_first_of("Not") << endl;
+
+    cout << "We can print an individual letter: " << s3[5];
 }
